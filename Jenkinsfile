@@ -25,15 +25,15 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'npm install'
+                sh 'npm install'
             }
         }
 
         stage('Run Login Tests Only') {
             steps {
-                bat '''
-                    set TERM=dumb
-                    set FORCE_COLOR=0
+                sh '''
+                    export TERM=dumb
+                    export FORCE_COLOR=0
                     npx cypress run --spec "cypress/e2e/features/**/*.feature" --reporter min
                 '''
             }
@@ -41,7 +41,7 @@ pipeline {
 
         stage('Generate Allure Report') {
             steps {
-                bat 'npm run report:allure:generate'
+                sh 'npm run report:allure:generate'
             }
         }
 
