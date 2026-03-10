@@ -1,0 +1,26 @@
+{
+  "LOGIN_SUCCESS_MESSAGE": "Logged in successfully",
+  "SURVEY_SCHEDULED_SUCCESSFULLY": "Survey Scheduled Successfully",
+  "SURVEY_SCHEDULE_SUCCESS": "Survey schedule added and sent for review successfully!",
+  "SURVEY_SCHEDULE_DUPLICATE": "Survey schedule added and sent for review duplicate!",
+  "SURVEY_SCHEDULE_DELETE": "Schedule deleted successfully!",
+  "SURVEY_SCHEDULE_APPROVED": "Schedule approved successfully!",
+  "SURVEY_SCHEDULE_REJECTED": "Schedule rejected successfully!",
+  "SURVEY_LIST_SUCCESS": "Survey added and sent for review successfully!",
+  "SURVEY_LIST_FILE_MAX_SIZE": "The file size should not exceed 20 Bytes.",
+  "SURVEY_LIST_DELETE_ALERT": "Are you sure that you want to remove all files?",
+  "SURVEY_LIST_REQUIRED_ALERT": "Response required.",
+  "SURVEY_SCHEDULE_DELETE_ALERT": "Are you sure that you want to remove all files?",
+  "SURVEY_ADD_REQUIRED_NUMBER_ALERT": "The value should not be less than",
+  "SURVEY_COMPLETE_MESSAGE": "Thank you for completing the survey",
+  "SURVEY_DRAFT_MESSAGE": "Survey saved as draft successfully!",
+  "SURVEY_TRANSLATION_ADD_ALERT":  "Please add translation",
+  "SURVEY_NO_LOGIC": "No logical rules",
+  "SURVEY_LOGIC_CREATE_RULE": "Create a rule to customize the flow of the survey",
+  "LOGIC_RULE_SUMMARY": "('question1' == 'Item 1') and ('question2' != 'Item 2')",
+  "LOGIC_RULE_EDITED_QUESTION_SUMMARY": "If ('question1' == 'Item 1') and 'question3' Not empty, make question 'question3' enable",
+  "LOGIC_RULE_EDITED_QUESTION_CHANGE_SUMMARY": "If ('question1' == 'Item 1') and ('question2' != 'Item 2'), make question 'question3' enable",
+  "LOGIC_RULE_MANUAL": "('question1' == 'Item 1') and ('question2' != 'Item 2')",
+  "SURVEY_LIST_APPROVED": "Survey approved successfully"
+
+}

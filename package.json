@@ -1,0 +1,42 @@
+{
+  "name": "cypress-bdd-framework",
+  "version": "1.1.1",
+  "description": "Cypress BDD Framework with Cucumber and Allure Reports",
+  "scripts": {
+    "clean:reports": "rimraf allure-results allure-report cypress/reports",
+    "test": "cypress run",
+    "test:with:allure": "npm run clean:reports && cypress run",
+    "report:allure:generate": "allure generate allure-results --clean -o allure-report",
+    "report:allure:open": "allure open allure-report",
+    "report:allure:html": "node export-report.js html",
+    "report:allure:pdf": "node export-report.js pdf",
+    "cypress:run": "cypress run",
+    "allure:report": "allure generate allure-results --clean -o allure-report && npx single-file-html allure-report/index.html -o allure-report-single.html",
+    "test:allure": "npm run cypress:run && npm run allure:report"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.3.1",
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.2",
+    "@faker-js/faker": "^10.0.0",
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.34.1",
+    "allure-single-html-file-js": "^0.0.6",
+    "cucumber-html-reporter": "^7.0.0",
+    "cypress": "^13.17.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-real-events": "^1.15.0",
+    "cypress-wait-until": "^3.0.2",
+    "cypress-xpath": "^2.0.1",
+    "esbuild": "^0.19.0",
+    "puppeteer": "^24.20.0",
+    "rimraf": "^6.0.1"
+  },
+  "main": "cypress.config.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.18"
+  }
+}

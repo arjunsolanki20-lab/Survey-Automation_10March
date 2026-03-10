@@ -1,0 +1,6 @@
+{
+  "surveyList": "/SurveyUI/surveys",
+  "surveyAdd": "/SurveyUI/surveys/add",
+  "dashboard": "/PuffinUI/dashboard",
+  "login": "/PuffinUI/login"
+}
